@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div>
+        <h1> <a href="https://github.com/SasuIg/Z-Calc">Github Repo</a> </h1>
+        <button id="clear" onclick="clearDisplay()">Clear Display</button>
+    </div>
+    <br>
+    <br>
+    <table id="main">
+        <!-- OUTPUT BOX -->
+        <tbody id="outputbox">
+            <tr>
+                <td colspan="4"><input type="text" id="display" readonly placeholder="0"></td>
+            </tr>
+        </tbody>
+        <!-- ROW 1 -->
+        <tbody id="calcbuttons">
+            <tr>
+                <td> <button onclick="appendToDisplay('7')">7</button></td>
+                <td> <button onclick="appendToDisplay('8')">8</button></td>
+                <td> <button onclick="appendToDisplay('9')">9</button></td>
+                <td> <button onclick="appendToDisplay('/')">&divide;</button></td>
+            </tr>
+
+            <!-- ROW 2 -->
+            <tr>
+                <td> <button onclick="appendToDisplay('4')">4</button></td>
+                <td> <button onclick="appendToDisplay('5')">5</button></td>
+                <td> <button onclick="appendToDisplay('6')">6</button></td>
+                <td> <button onclick="appendToDisplay('*')">&times;</button></td>
+            </tr>
+            <!-- ROW 3 -->
+            <tr>
+                <td><button onclick="appendToDisplay ('1')">1</button></td>
+                <td><button onclick="appendToDisplay('2')">2</button></td>
+                <td><button onclick="appendToDisplay ('3')">3</button></td>
+                <td><button onclick="appendToDisplay ('-')">&minus;</button></td>
+
+            </tr>
+
+            <!-- ROW 4 -->
+            <tr>
+                <td> <button onclick="appendToDisplay('0')">0</button></td>
+                <td> <button onclick="appendToDisplay('&sdot;')">&sdot;</button></td>
+                <td> <button onclick="appendToDisplay('+')">&plus;</button></td>
+                <td> <button id="equals" onclick="calculate('')">&equals;</button></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
